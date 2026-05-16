@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 style="margin: auto; padding-left: 33%;">Job Application Form</h1>
+    </header>
+
+    <hr>
+
+    <!-- Form -->
+    <main>
+        <form>
+            <!-- Personal info -->
+            <fieldset>
+
+                <legend style="margin: auto;">Personal Information</legend>
+                <label for="name">Name :</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="abc@mail.com" required>
+                <br><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+91 9876543210" required>
+                <br><br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+                <!-- <br>
+                <input type="submit"> -->
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend style="margin: auto;">Gender</legend>
+                <label for="male" name="gender">Male</label>
+                <input type="radio" id="male">
+                <br>
+                <label for="female" name= "gender">Female</label>
+                <input type="radio" id="female">
+                <br>
+                <label for="other" name="gender">Digloo</label>
+                <input type="radio" id="other">
+                
+            </fieldset>
+
+            <fieldset>
+
+                <legend style="margin: auto;">Skills</legend>
+                <label for="web">Web-Dev</label>
+                <input type="checkbox" id="web">
+                <br>
+                <label for="data">Data Scientist</label>
+                <input type="checkbox" id="data">
+                <br>
+                <label for="ai">AI</label>
+                <input type="checkbox" id="ai">
+                <br>
+                <label for="dbms">DBMS</label>
+                <input type="checkbox" id="dbms">
+            </fieldset>
+
+            <fieldset>
+
+                <legend style="margin: auto;">Additional Information</legend>
+                <label for="exp">Experience</label>
+                <select id="exp">
+                    <option disabled selected>Select</option>
+                    <option>Fresher</option>
+                    <option>1 Year</option>
+                    <option>2 Year</option>
+                    <option>3 Year</option>
+                    <option>3+ Year</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="city">City</label>
+                <select id="city">
+                    <option disabled selected>Select</option>
+                    <option>Vadodara</option>
+                    <option>Surat</option>
+                    <option>Ahmedabad</option>
+                    <option>Rajkot</option>
+                    <option>Vapi</option>
+
+                </select>
+
+                <br><br>
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" accept=".pdf,.doc,.docx">
+
+            </fieldset>
+
+            <br>
+            <button type="submit" style="margin: auto; ">Submit Application</button>
+            <button type="reset" style="margin: auto; ">Reset</button>
+
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>

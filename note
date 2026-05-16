@@ -1,0 +1,19 @@
+semantic tag: meaningfull tags, helps in redability for developer, helps in good seo.
+only one "main" tag is in full page
+header tag
+nav tag
+section
+aside
+article
+footer
+
+
+attributes: extra functions in tag 
+id: unique 
+class: can be used for multipl times.
+
+
+custome data attributes: allow you to store extra information on standard HTML elements without using non-standard attributes or other hacks.
+
+
+
