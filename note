@@ -17,3 +17,71 @@ custome data attributes: allow you to store extra information on standard HTML e
 
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+GitHUb
+
+Git:
+Version control System
+
+Who changed the code
+
+what changed were made
+
+why it was changed 
+
+when changed
+
+Git --> VCS---> treacking
+
+TYPES OF VCS
+
+Local VCS
+Distributed VCS
+cenral VCS
+
+
+Distributed vcs
+
+#distributed vcs:
+CR: central repository
+
+^(delta) = v1-v2.
+
+v1 = <p> stavan </p>
+v2 - <p> stavan katrojwar </p> 
+
+How storing works in git:
+hashing 
+compresson
+de duplication
+
+Stages:
+
+Git has 3 Stages:
+
+1. Working Directory: 
+
+2. Staging Area
+
+3. Git Repository
+
+
+#GIT VS GITHUBB
+
+
+git is a vcs                                githuib is a online hosting platform
+
+git is a software                            works online on internet
+
+work locally on system                       Store git repo online & enables 
+                                              collaboration
+
+track changes manages version 
+
+Linus torvald 
+
+works offline                                   mostly yes
+
+Linus torvald 2005                              GitHub 
