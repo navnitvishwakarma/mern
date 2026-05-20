@@ -49,8 +49,8 @@ CR: central repository
 
 ^(delta) = v1-v2.
 
-v1 = <p> stavan </p>
-v2 - <p> stavan katrojwar </p> 
+v1 = <p> navnit </p>
+v2 - <p> navnit kumar </p> 
 
 How storing works in git:
 hashing 
@@ -76,7 +76,7 @@ git is a vcs                                githuib is a online hosting platform
 git is a software                            works online on internet
 
 work locally on system                       Store git repo online & enables 
-                                              collaboration
+                                             collaboration
 
 track changes manages version 
 
@@ -85,3 +85,27 @@ Linus torvald
 works offline                                   mostly yes
 
 Linus torvald 2005                              GitHub 
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
+
+#git commands
+
+->check version:- git --version
+->configuration command:- git config --global user.name "user name"
+                          git config --global user.email "email"
+
+->to check config list:- git config --list
+
+->intialise git in folder:- git init
+->to add all changes to git :- git add .
+->to add specific file cjhange:- git add file_name
+->to commit the changes :- git commit -m"message"
+->to push on github:- git push
+
+->to know all about commits:- git log
+
+->to checkout to specific commit:- git checkout commit_id
+
+->
