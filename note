@@ -108,4 +108,13 @@ Linus torvald 2005                              GitHub
 
 ->to checkout to specific commit:- git checkout commit_id
 
-->
+
+ 
+
+
+-> git stash :- 
+-> git stash pop :- 
+-> git restore filename :-
+-> git restore --stages filename :-
+-> git restore --soft HEAD~1 :-
+-> git restore --hard HEAD~1 :-
