@@ -112,9 +112,16 @@ Linus torvald 2005                              GitHub
  
 
 
--> git stash :- 
--> git stash pop :- 
--> git restore filename :-
--> git restore --stages filename :-
--> git restore --soft HEAD~1 :-
--> git restore --hard HEAD~1 :-
+-> git stash :- Temporarily shelves (stashes) uncommitted changes, giving you a clean working directory.",When you need to switch branches quickly but aren't ready to commit your current half-done work.
+
+-> git stash pop :- Reapplies the most recently stashed changes and removes them from the stash list.,When you return to your branch and want to resume the work you temporarily shelved.
+
+-> git restore filename :- "Discards local, uncommitted changes in your working directory for a specific file.",When you messed up a file and want to revert it back to the state of your last commit.
+
+-> git restore --stages filename :-"Unstages a file, removing it from the index while keeping your local modifications.",When you accidentally ran git add on a file but aren't ready to commit it yet.
+
+-> git restore --soft HEAD~1 :-Undoes the last commit, but keeps all those changes staged in your index.","When you committed too early (e.g., forgot a file) and want to redo the commit without losing your code."
+
+-> git restore --hard HEAD~1 :- [Destructive] Erases the last commit, the staged index, and all uncommitted local modifications.",When your last commit was a total disaster and you want to completely wipe it out.
+
+
