@@ -125,3 +125,7 @@ Linus torvald 2005                              GitHub
 -> git restore --hard HEAD~1 :- [Destructive] Erases the last commit, the staged index, and all uncommitted local modifications.",When your last commit was a total disaster and you want to completely wipe it out.
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#css

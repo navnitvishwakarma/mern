@@ -1,0 +1,34 @@
+#traffic {
+    width: 100px;
+    height: 300px;
+    background-color: #333;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.light {
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    margin: 20px auto;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.light.red {
+    background-color: red;
+}
+.light.yellow {
+    background-color: yellow;
+}
+.light.green {
+    background-color: green;
+}
+#rod {
+    width: 10px;
+    height: 300px;
+    background-color: #333;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
