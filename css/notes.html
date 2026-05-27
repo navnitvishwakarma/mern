@@ -1,22 +1,32 @@
 <!-- Notes for CSS -->
- #box model
- - content: area where text and images appear 
- - padding: space around the content
- - border: line around the padding
- - margin: space around the border
- - width and height of element is content area
+#box model
+- content: area where text and images appear
+- padding: space around the content
+- border: line around the padding
+- margin: space around the border
+- width and height of element is content area
 
 #content box vs box sizing
 - content box: width and height only include content area, padding and border are added to total size
-- border box: width and height include content, padding, and border, total size is fixed  
-type of box sizing can be set using box-sizing property  
+- border box: width and height include content, padding, and border, total size is fixed
+type of box sizing can be set using box-sizing property
+
+
+#display property
+- block: element takes up the full width available, starts on a new line, eg: div, p, h1-h6
+- inline: element takes up only as much width as necessary, does not start on a new line, cannot apply height and width
+  properties, margin and padding only affect horizontal spacing, eg: span, a, strong, em
+- inline-block: element is formatted like an inline element but can have width and height set
 
 
 
-    #positioning
-    - static: default position, elements are positioned according to the normal flow of the document
-    - relative: element is positioned relative to its normal position, can be moved using top, bottom, left, right properties
-    - absolute: element is positioned relative to its nearest positioned ancestor, can be moved using top, bottom, left, right properties
-    - fixed: element is positioned relative to the viewport, can be moved using top, bottom
-    - sticky: element is positioned based on the user's scroll position, toggles between relative and fixed
-    
+
+
+#positioning
+- static: default position, elements are positioned according to the normal flow of the document
+- relative: element is positioned relative to its normal position, can be moved using top, bottom, left, right
+properties
+- absolute: element is positioned relative to its nearest positioned ancestor, can be moved using top, bottom, left,
+right properties
+- fixed: element is positioned relative to the viewport, can be moved using top, bottom
+- sticky: element is positioned based on the user's scroll position, toggles between relative and fixed
