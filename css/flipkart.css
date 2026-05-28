@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 8px; 
+    box-sizing: border-box;
+}
+
+
+
+
+
+.top,.Travel,.Location{
+    margin: 10px;
+    display: inline;
+    box-sizing: border-box;
+}
+
+.logo{
+    background-color: yellow ;
+    display: inline;
+    padding: 12px;
+    font-weight: 800;
+    font-size: 15px;
+    color: blue;
+    font-style: italic;
+    border-radius: 5%;
+}
+
+.Travel{
+    background-color: rgb(120, 120, 128);
+    color: white;
+    padding: 12px;
+    font-weight: 800;
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 5%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 1px;
+}
+.Location{
+    
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    font-weight: 800;
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 5%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 75%;
+}
+
+
+
+
+.nd-top, .search, .profile,.more,.cart{
+    display: inline;
+    
+}
+
+.search-bar{
+    width: 55%;
+    padding: 5px;
+    border-radius: 5px; 
+    border: 2px solid rgb(120, 120, 128);
+    border-radius: 5px;
+    margin-right: 13%;  
+}
+
+.profile,.more,.cart{
+    
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-style: italic;
+}
+
+.box{
+    width: 70px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 36px;
+}
+
+/* hero section */
+
+img{
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
