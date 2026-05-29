@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+</head>
+<body>
+    <div class="product-card">
+        <img src="h1.webp" alt="Product Image" class="product-image">
+        <p class="sale">Sale</p>
+        <p class="heart-icon">❤️</p>
+        
+        <h2 class="product-title">New Phone</h2>
+        <p class="product-price">₹10,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        
+    </div>
+    
+</body>
+
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .product-card {
+        width: 200px;
+        border: 1px solid #807b7b;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        margin: 100px auto;
+     
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .sale {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    .product-title {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .product-price {
+        font-size: 16px;
+        color: green;
+        margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .heart-icon {
+        position: absolute;
+        top: 1px;
+        right: 10px;
+        font-size: 20px;
+       
+        background-color: #ffee00;
+        border-radius: 50%;
+    }
+</style>
+</html>
