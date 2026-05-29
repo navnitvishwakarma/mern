@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+</head>
+<body>
+    <header>
+        <h1>YouTube</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Subscriptions</a></li>
+                <li><a href="#">Library</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="video-list">
+            <article class="video-item">
+                <img src="h2.webp" alt="Video Thumbnail">
+                <h2>Video Title 1</h2>
+                <p>Channel Name</p>
+                <p>1M views • 1 day ago</p>
+            </article>
+            <article class="video-item">
+                <img src="h1.webp" alt="Video Thumbnail">
+                <h2>Video Title 2</h2>
+                <p>Channel Name</p>
+                <p>500K views • 3 days ago</p>
+            </article>
+            <article class="video-item">
+                <img src="h3.webp" alt="Video Thumbnail">
+                <h2>Video Title 3</h2>
+                <p>Channel Name</p>
+                <p>200K views • 1 week ago</p>
+            </article>
+            <article class="video-item">
+                <img src="h1.webp" alt="Video Thumbnail">
+                <h2>Video Title 4</h2>
+                <p>Channel Name</p>
+                <p>100K views • 2 weeks ago</p>
+            </article>
+            
+
+        </section>
+    </main>
+
+
+    
+</body>
+
+<style>
+    /* Basic styles for YouTube layout */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #ff0000;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .video-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .video-item {
+        width: calc(25% - 20px);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    .video-item img {
+        width: 100%;
+        height: auto;
+    }   
+</style>
+</html>
