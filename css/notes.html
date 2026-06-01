@@ -30,3 +30,40 @@ properties
 right properties
 - fixed: element is positioned relative to the viewport, can be moved using top, bottom
 - sticky: element is positioned based on the user's scroll position, toggles between relative and fixed
+
+
+#indexing
+- z-index: controls the stacking order of elements, higher z-index means the element will be in front of elements with lower z-index, only works on positioned elements (relative, absolute, fixed, sticky) 
+- default z-index is 0, elements with the same z-index will be stacked in the order they appear in the HTML 
+- negative z-index will place the element behind elements with a z-index of 0 or higher
+#overflow
+- controls what happens to content that overflows the bounds of an element
+- visible: default value, content is not clipped and may overflow the element's box 
+- hidden: content is clipped and any overflow is not visible
+- scroll: content is clipped but a scrollbar is added to allow the user to scroll through the overflow content
+- auto: content is clipped and a scrollbar is added only if necessary to view the overflow content
+
+#flexbox
+- a layout model that allows for flexible and responsive design 
+- main axis: the primary axis along which flex items are laid out, can be horizontal (row) or vertical (column)
+- cross axis: the axis perpendicular to the main axis, used for alignment and spacing of flex items
+- flex container: the parent element that contains flex items, defined by setting display: flex or display: inline-flex
+- flex items: the child elements of a flex container, can be laid out in a row or column, and can be aligned and spaced using various flex properties
+- justify-content: controls the alignment of flex items along the main axis, values include flex-start, flex-end, center, space-between, space-around, and space-evenly
+- align-items: controls the alignment of flex items along the cross axis, values include flex-start, flex-end, center, baseline, and stretch
+- flex-wrap: controls whether flex items wrap onto multiple lines, values include nowrap (default), wrap, and wrap-reverse
+#properties of flex items
+- flex-grow: controls how much a flex item will grow relative to the other flex items in the container, default is 0 (will not grow)
+- flex-shrink: controls how much a flex item will shrink relative to the other flex items in the container, default is 1 (will shrink if necessary)
+- flex-basis: controls the initial size of a flex item before any growing or shrinking occurs, can be set to a specific length (e.g. 200px) or a percentage (e.g. 50%)
+- order: controls the order in which flex items are displayed in the flex container, default is 0 (items are displayed in the order they appear in the HTML), can be set to a positive or negative integer to change the order of items 
+#example of flexbox layout
+- display: flex;
+- flex-direction: row; (default) or column
+- justify-content: center;
+- align-items: center;
+- flex-wrap: wrap;
+- flex-grow: 1; (for flex items to grow and fill available space)
+
+
+
