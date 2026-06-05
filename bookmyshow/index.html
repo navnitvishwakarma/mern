@@ -3,31 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book My Show</title>
+    <title>BookMyShow Clone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1110392424633790464/iHlkAQMR_400x400.png">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header class="header">
         <nav class="navbar">
             <div class="left-nav">
-                <p>Book<span>My</span>Show</p>
+                <p class="brand">Book<span>My</span>Show</p>
                 <div class="search-bar">
-                     <button><img src="images/search.png" alt="Search" width="20px"></button>
+                    <button type="button"><img src="images/search.png" alt="Search" width="20" height="20"></button>
                     <input type="text" placeholder="Search for Movies, Events, Plays, Sports and Activities">
-                   
                 </div>
             </div>
             <div class="right-nav">
                 <ul>
                     <li class="city"><a href="#">Vadodara</a></li>
                     <li><a href="#"><button>Sign In</button></a></li>
-                    <li><a href="#"><img src="images/more.png" alt="More" width="20px"></a></li>
-                   
+                    <li><a href="#"><img src="images/more.png" alt="More" width="20" height="20"></a></li>
                 </ul>
+            </div>
         </nav>
     </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-copy">
+                <span class="eyebrow">MOVIES · EVENTS · PLAYS · SPORTS</span>
+                <h1>Book tickets for the latest movies and events.</h1>
+                <p>Discover new releases, live shows, concerts and more with instant booking in your city.</p>
+                <div class="hero-actions">
+                    <button class="primary-btn">Book Tickets</button>
+                    <button class="secondary-btn">Browse Events</button>
+                </div>
+            </div>
+            <div class="hero-cards">
+                <div class="stat-card">
+                    <h2>300+</h2>
+                    <p>New releases this week</p>
+                </div>
+                <div class="stat-card accent">
+                    <h2>1M+</h2>
+                    <p>Tickets booked daily</p>
+                </div>
+                <div class="stat-card">
+                    <h2>50+</h2>
+                    <p>Live events in your city</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-row categories">
+            <h2>Top categories</h2>
+            <div class="card-grid">
+                <article class="category-card">
+                    <h3>Movies</h3>
+                    <p>Latest releases and blockbusters.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Events</h3>
+                    <p>Live concerts, standup, and festivals.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Plays</h3>
+                    <p>Theatre shows and dramatic performances.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Sports</h3>
+                    <p>Matches, tournaments, and fan fests.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-row offers">
+            <h2>Special offers</h2>
+            <div class="offer-grid">
+                <article class="offer-card">
+                    <h3>Weekend discount</h3>
+                    <p>Up to 40% off on selected movie tickets.</p>
+                </article>
+                <article class="offer-card">
+                    <h3>Group booking</h3>
+                    <p>Save more when you book for 4 or more people.</p>
+                </article>
+                <article class="offer-card">
+                    <h3>Prime benefits</h3>
+                    <p>Early access and exclusive seat selection.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-row movie-shelf">
+            <div class="section-header">
+                <h2>Trending movies</h2>
+                <a href="#" class="view-all">View all</a>
+            </div>
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <div class="movie-poster poster-1"></div>
+                    <div class="movie-info">
+                        <h3>Pathaan</h3>
+                        <p>Action · Hindi</p>
+                        <span>₹250 onwards</span>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <div class="movie-poster poster-2"></div>
+                    <div class="movie-info">
+                        <h3>Jawan</h3>
+                        <p>Action · Hindi</p>
+                        <span>₹260 onwards</span>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <div class="movie-poster poster-3"></div>
+                    <div class="movie-info">
+                        <h3>OMG 2</h3>
+                        <p>Drama · Hindi</p>
+                        <span>₹180 onwards</span>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <div class="movie-poster poster-4"></div>
+                    <div class="movie-info">
+                        <h3>Dream Girl 2</h3>
+                        <p>Comedy · Hindi</p>
+                        <span>₹190 onwards</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h3>BookMyShow</h3>
+                <p>India's largest entertainment ticketing platform.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Plays</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-note">© 2026 BookMyShow Clone. All rights reserved.</p>
+    </footer>
 </body>
 </html>
