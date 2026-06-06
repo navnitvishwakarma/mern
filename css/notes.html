@@ -6,6 +6,7 @@
 - margin: space around the border
 - width and height of element is content area
 
+
 #content box vs box sizing
 - content box: width and height only include content area, padding and border are added to total size
 - border box: width and height include content, padding, and border, total size is fixed
@@ -17,8 +18,6 @@ type of box sizing can be set using box-sizing property
 - inline: element takes up only as much width as necessary, does not start on a new line, cannot apply height and width
   properties, margin and padding only affect horizontal spacing, eg: span, a, strong, em
 - inline-block: element is formatted like an inline element but can have width and height set and margin and padding affect all sides, eg: img, button  
-
-
 
 
 
@@ -43,6 +42,7 @@ right properties
 - scroll: content is clipped but a scrollbar is added to allow the user to scroll through the overflow content
 - auto: content is clipped and a scrollbar is added only if necessary to view the overflow content
 
+
 #flexbox
 - a layout model that allows for flexible and responsive design 
 - main axis: the primary axis along which flex items are laid out, can be horizontal (row) or vertical (column)
@@ -52,24 +52,63 @@ right properties
 - justify-content: controls the alignment of flex items along the main axis, values include flex-start, flex-end, center, space-between, space-around, and space-evenly
 - align-items: controls the alignment of flex items along the cross axis, values include flex-start, flex-end, center, baseline, and stretch
 - flex-wrap: controls whether flex items wrap onto multiple lines, values include nowrap (default), wrap, and wrap-reverse
+
+
 #properties of flex items
 - flex-grow: controls how much a flex item will grow relative to the other flex items in the container, default is 0 (will not grow)
 - flex-shrink: controls how much a flex item will shrink relative to the other flex items in the container, default is 1 (will shrink if necessary)
 - flex-basis: controls the initial size of a flex item before any growing or shrinking occurs, can be set to a specific length (e.g. 200px) or a percentage (e.g. 50%)
 - order: controls the order in which flex items are displayed in the flex container, default is 0 (items are displayed in the order they appear in the HTML), can be set to a positive or negative integer to change the order of items 
+
+
 #example of flexbox layout
 - display: flex;
 - flex-direction: row; (default) or column
 - justify-content: center;
 - align-items: center;
 - flex-wrap: wrap;
-
 - flex-grow: 1; (for flex items to grow and fill available space)
 - order: 1; (for flex items to change their order in the layout)
 - flex-basis: 200px; (for flex items to have a specific initial size)
 - align-self: flex-start; (for individual flex items to override the align-items property and align themselves differently along the cross axis)
 - flrex-shrink: 0; (for flex items to prevent shrinking when the container is too small)
 - flex: 1 0 200px; (shorthand for flex-grow, flex-shrink, and flex-basis)
+
+
+#grid
+- a layout model that allows for two-dimensional layout of elements in rows and columns
+- grid container: the parent element that contains grid items, defined by setting display: grid or display: inline-grid
+- grid items: the child elements of a grid container, can be placed in specific rows and columns using various grid properties
+- grid-template-columns: defines the number and size of columns in the grid, can be set to a specific length (e.g. 200px) or a fraction (e.g. 1fr)
+- grid-template-rows: defines the number and size of rows in the grid, can be set to a specific length (e.g. 200px) or a fraction (e.g. 1fr)
+- grid-gap: defines the gap between rows and columns in the grid, can be set to a specific length (e.g. 10px) or a percentage (e.g. 5%)
+- grid-column: defines the starting and ending column lines for a grid item, can be set to a specific line number (e.g. 1) or a span (e.g. span 2)
+- grid-row: defines the starting and ending row lines for a grid item, can be set to a specific line number (e.g. 1) or a span (e.g. span 2)
+- grid-area: defines the area of the grid that a grid item occupies, can be set to a specific area name (e.g. header) or a combination of grid-row and grid-column values (e.g. 1 / 1 / 2 / 3)  
+
+
+#properties of grid items
+- justify-self: controls the horizontal alignment of a grid item within its grid area, values include start, end, center, and stretch
+- align-self: controls the vertical alignment of a grid item within its grid area, values include start, end, center, and stretch
+- order: controls the order in which grid items are displayed in the grid container, default is 0 (items are displayed in the order they appear in the HTML), can be set to a positive or negative integer to change the order of items
+- grid-column-start: defines the starting column line for a grid item, can be set to a specific line number (e.g. 1) or a span (e.g. span 2)
+- grid-column-end: defines the ending column line for a grid item, can be set to a specific line number (e.g. 3) or a span (e.g. span 2)
+- grid-row-start: defines the starting row line for a grid item, can be set to a specific line number (e.g. 1) or a span (e.g. span 2)
+- grid-row-end: defines the ending row line for a grid item, can be set to a specific line number (e.g. 3) or a span (e.g. span 2)  
+- grid-template-areas: defines named areas of the grid that can be referenced by grid items, can be set to a string of area names (e.g. "header header header" "sidebar content content" "footer footer footer") where each area name corresponds to a specific section of the grid
+
+
+#example of grid layout
+- display: grid;  
+- grid-template-columns: repeat(3, 1fr); (for a grid with 3 equal columns)
+- grid-template-rows: repeat(2, 200px); (for a grid with 2 rows of 200px each)
+- grid-gap: 10px; (for a gap of 10px between rows and columns)
+- grid-column: 1 / 3; (for a grid item to span across the first and second columns)
+- grid-row: 1 / 2; (for a grid item to occupy the first row)
+- grid-area: header; (for a grid item to occupy a specific area named "header")
+- justify-self: center; (for a grid item to be horizontally centered within its grid area)
+- align-self: center; (for a grid item to be vertically centered within its grid area)  
+
 
 
 
